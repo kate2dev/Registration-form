@@ -1,0 +1,73 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <h1 class="text-red-700 text-center">My form</h1>
+    <main class="flex items-center justify-center mt-10 text-white">
+      <form
+        onsubmit="validateForm(event)"
+        class="bg-blue-900 flex flex-col w-fit justify-center items-center py-5"
+      >
+        <h2 class="text-2xl py-4 text-white">Registration Form</h2>
+        <div
+          class="flex flex-col gap-6 px-8 py-5 *:max-w-80 *:py-2 *:rounded-md *:px-3 text-black"
+        >
+          <input
+            type="text"
+            name="firstName"
+            placeholder="first Name"
+            for="FirstName"
+            id="firstName"
+          />
+          <input
+            type="text"
+            name="lastName"
+            placeholder="Last Name"
+            for="lastName"
+            id="lastName"
+          />
+          <input type="email" name="email" placeholder="Email" id="email" />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            id="password"
+          />
+
+          <div
+            class="terms *:flex *:text-{11px} *:gap-5 flex flex-col gap-3 text-white"
+          >
+            <span>
+              <input type="checkbox" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
+                eaque?
+              </p>
+            </span>
+
+            <span>
+              <input type="checkbox" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Tenetur, nam?
+              </p>
+            </span>
+          </div>
+        </div>
+        <button
+          type="submit"
+          id="button"
+          class="bg-amber-500 text-black font-semibold px-10 rounded-lg py-2 self-end mr-8"
+        >
+          Register
+        </button>
+      </form>
+    </main>
+  </body>
+</html>
